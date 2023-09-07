@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -S export CFILES=main.s
+ export CFILES=main.c ; 
