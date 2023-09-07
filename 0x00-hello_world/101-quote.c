@@ -1,13 +1,13 @@
 #include <stdio.h> 
+#include <unistd.h>
 /**
  * main - Start of the project
  *
- * Return: Always 0
+ * Return: 1 when successful
 */
 int main(void)
 {
-const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-fwrite(1, message, 59); 
-return (0); 
+fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+return (1); 
 }
 
