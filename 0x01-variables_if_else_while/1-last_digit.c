@@ -4,23 +4,26 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - Start of the variable project
+ * main -Entry of the project
  *
- * Return: Should be 0
+ * Return: Always 0
 */
 int main(void)
 {
 	int n;
-
+	int lastdigit;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n > 5)
-		printf("%d is greater than 5", n);
-	if (n == 0)
-		printf("%d and is 0", n);
-	if (n < 6)
-		printf("%d and is less than 6 and not 0", n);
-	printf("\n");
+lastdigit = n % 10;
+printf("Last digit of %d is %d and is ", n, lastdigit);
+if (lastdigit > 5)
+printf("greater than 5");
+else if (lastdigit == 0)
+printf("0");
+else
+printf("less than 6 and not 0");
+
+printf("\n");
 	return (0);
 }
