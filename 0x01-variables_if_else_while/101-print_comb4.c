@@ -18,9 +18,11 @@ putchar (a);
 putchar (b);
 putchar (c);
 }
-if (a != 55 || b != 56)
+{
+	if (a != 55 || b != 56)
 putchar (',');
 putchar (' ');
+}
 putchar ('\n');
-return(0);
+return (0);
 }
