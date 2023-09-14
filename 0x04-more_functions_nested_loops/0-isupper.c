@@ -2,7 +2,7 @@
 
 /*
  * -isupper -checks for uppercase characters
- *  @c: fuction parameter
+ *  @c: charater to be checked
  *  Return: 1 on success 0 on failure
 */
 int _isupper(int c)
