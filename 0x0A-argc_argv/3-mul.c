@@ -17,7 +17,7 @@ int result;
 
 if (argc != 3)
 {
-printf("error\n");
+printf("Error\n");
 return (1);
 }
 
