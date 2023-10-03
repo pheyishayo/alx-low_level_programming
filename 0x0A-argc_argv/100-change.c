@@ -18,7 +18,6 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
-
 cents = atoi(argv[1]);
 if (cents < 0)
 {
@@ -40,16 +39,13 @@ else if (cents >= 5)
 cents -= 5;
 }
 else if (cents >= 2)
-{
 cents -= 2;
-}
 else
 {
 cents -= 1;
 }
 coins++;
 }
-
 printf("%d\n", coins);
 return (0);
 }
