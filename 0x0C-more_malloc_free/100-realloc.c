@@ -45,7 +45,7 @@ source = ptr;
 destination = new_ptr;
 
 
-for ( i = 0; i < old_size; i++)
+for (i = 0; i < old_size; i++)
 destination[i] = source[i];
 
 free(ptr);
