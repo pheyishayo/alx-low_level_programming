@@ -16,16 +16,12 @@ va_list sepa;
 va_start(sepa, n);
 for (p = 0; p < n; p++)
 {
-if (separator != NULL)
-{
 printf("%d", va_arg(sepa, unsigned int));
+if (p != (n - 1) && separator != NULL)
+{
 printf("%s", separator);
 }
-else
-{
-printf("%d", va_arg(sepa, unsigned int));
 }
 printf("\n");
 va_end(sepa);
-}
 }
