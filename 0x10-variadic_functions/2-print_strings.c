@@ -12,20 +12,21 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int p;
 va_list sepa;
+char *b;
 
 va_start(sepa, n);
 for (p = 0; p < n; p++)
 {
-char *b = va_arg(sepa, char *);
+b = va_arg(sepa, char *);
 if (b == NULL)
 {
-printf("(Nil)");
+printf("(nil)");
 }
 else
 {
 printf("%s", b);
 }
-if (separator != NULL && p <  n - 1)
+if (p != (n - 1) && separator != NULL)
 {
 printf("%s", separator);
 }
@@ -33,4 +34,3 @@ printf("%s", separator);
 printf("\n");
 va_end(sepa);
 }
-
