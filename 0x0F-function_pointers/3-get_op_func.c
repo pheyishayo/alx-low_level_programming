@@ -22,7 +22,7 @@ int p;
 p = 0;
 while (p < 5)
 {
-if (ops[i].op[0] == s[0])
+if (ops[p].op[0] == s[0])
 return (ops[p].f);
 p++;
 }
