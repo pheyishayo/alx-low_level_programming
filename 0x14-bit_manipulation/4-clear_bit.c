@@ -12,7 +12,7 @@ unsigned long int x;
 unsigned int gum;
 
 if (index > 64)
- return (-1);
+return (-1);
 gum = index;
 for (x = 1; gum > 0; x *= 2, gum--)
 ;
