@@ -4,19 +4,20 @@
 /**
  * flip_bits - Function that return the number of bits you will flip bits
  * @n: first flip number
- * @m: second number 
+ * @m: second number
  * Return: number of bits that was flip
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 unsigned long int k;
-        int j;
+int j;
 
 k = n ^ m;
 j = 0;
 
-while (k)
-j++;
-k &= (k - 1);
+while (k > 0)
+j += k & 1;
+k >>= 1;
+
 return (j);
 }
